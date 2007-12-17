@@ -15,7 +15,6 @@ Patch0: 05_buffer_overflows_in_perliso9660.dpatch
 Patch1: 06_module_build.dpatch
 Patch2: 02_wrong_function_name.dpatch
 Url:		http://search.cpan.org/search?query=Device-Cdio
-Buildroot:	%{_tmppath}/%{name}-root
 BuildRequires: perl-devel >= 5.8.0
 BuildRequires: perl(ExtUtils::PkgConfig)
 BuildRequires: perl(Module::Build)
