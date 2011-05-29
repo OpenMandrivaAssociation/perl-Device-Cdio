@@ -1,7 +1,7 @@
 %define module	Device-Cdio
 %define name	perl-%{module}
 %define version	0.2.4
-%define release %mkrel 10
+%define release %mkrel 11
 
 Name:		%{name}
 Version:	%{version}
