@@ -1,7 +1,7 @@
 %define module	Device-Cdio
 %define name	perl-%{module}
-%define version	0.2.4
-%define release %mkrel 13
+%define version	0.3.0
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -10,15 +10,7 @@ Summary:	Module for CD Input and Control library
 License:	GPL
 Group:		Development/Perl
 URL:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Device/%{module}-v%{version}.tar.bz2
-# Debian patch (Thx)
-Patch1: 01_invalid_cflags.patch
-Patch2: 02_wrong_function_name.patch
-Patch3: 03_version_information_in_swig.patch
-Patch4: 04_wrong_handling_of_output_parameters.patch
-Patch5: 05_buffer_overflows_in_perliso9660.patch
-Patch6: 06_module_build.patch
-Patch7: 07_pod-coverage.patch
+Source:     http://www.cpan.org/modules/by-module/Device/%{module}-v%{version}.tar.gz
 BuildRequires: perl-devel >= 5.8.0
 BuildRequires: perl(ExtUtils::PkgConfig)
 BuildRequires: perl(Module::Build)
@@ -32,13 +24,6 @@ A module to make easier temporary directories deletion
 
 %prep
 %setup -q -n %{module}-v%{version}
-%patch1 -p1 -b .01
-%patch2 -p1 -b .02
-#%patch3 -p1 -b .03
-%patch4 -p1 -b .04
-%patch5 -p1 -b .05
-%patch6 -p1 -b .06
-%patch7 -p1 -b .07
 chmod u+w -R .
 
 %build
