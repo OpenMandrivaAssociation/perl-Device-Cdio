@@ -42,3 +42,70 @@ chmod u+w -R .
 %files
 %{perl_vendorarch}/*
 %{_mandir}/*/*
+
+
+%changelog
+* Sun Feb 12 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.3.0-1
++ Revision: 773532
+- cleanup spec
+- new version
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+  + Götz Waschk <waschk@mandriva.org>
+    - rebuild for new libcdio
+
+* Sun May 29 2011 Funda Wang <fwang@mandriva.org> 0.2.4-11
++ Revision: 681406
+- mass rebuild
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 0.2.4-10mdv2010.0
++ Revision: 440548
+- rebuild
+
+* Thu Feb 05 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.4-9mdv2009.1
++ Revision: 337930
+- sync patches set with debian
+- disable test suite, it doesn't work (http://rt.cpan.org/Public/Bug/Display.html?id=42779)
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.2.4-8mdv2009.0
++ Revision: 256674
+- rebuild
+
+* Mon Jan 14 2008 Pixel <pixel@mandriva.com> 0.2.4-6mdv2008.1
++ Revision: 151427
+- rebuild for perl-5.10.0
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Oct 25 2007 Olivier Thauvin <nanardon@mandriva.org> 0.2.4-5mdv2008.1
++ Revision: 101935
+- add forgotten files by mdvsys
+- kill pod test, don't work
+- stealing some debian patchs (fix build)
+- workaround perm issue (ugly method, I agree)
+
+
+* Thu Sep 07 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 2006-09-07 01:49:10 (60449)
+- Fix buildrequires again
+
+* Thu Sep 07 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 2006-09-07 01:28:44 (60448)
+- bump release
+
+* Thu Sep 07 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 2006-09-07 01:27:29 (60447)
+- Fix buildrequires
+
+* Thu Sep 07 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 2006-09-07 01:00:30 (60442)
+- Fix buildrequires
+
+* Wed Sep 06 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 2006-09-06 22:29:46 (60429)
+- initial package
+
