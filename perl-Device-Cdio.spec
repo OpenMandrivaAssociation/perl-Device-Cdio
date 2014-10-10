@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:	0.3.0
-Release:	1
+Release:	2
 Summary:	Module for CD Input and Control library
 License:	GPL
 Group:		Development/Perl
