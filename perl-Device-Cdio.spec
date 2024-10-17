@@ -6,7 +6,7 @@ Release:	3
 Summary:	Module for CD Input and Control library
 License:	GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
+URL:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/Device/%{module}-v%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	perl(ExtUtils::PkgConfig)
