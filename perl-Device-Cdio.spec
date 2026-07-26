@@ -1,13 +1,13 @@
 %define module	Device-Cdio
 
 Name:		perl-%{module}
-Version:	0.3.0
-Release:	3
+Version:	2.0.0
+Release:	1
 Summary:	Module for CD Input and Control library
 License:	GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/Device/%{module}-v%{version}.tar.gz
+URL:		http://github.com/rocky/Perl-Device-Cdio
+Source0:	https://cpan.metacpan.org/authors/id/R/RO/ROCKY/%{module}-v%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	perl(ExtUtils::PkgConfig)
 BuildRequires:	perl(Module::Build)
